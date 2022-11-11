@@ -20,3 +20,27 @@ Route::get('/', function () {
 Route::get('/toko', function () {
     return view('utama.toko');
 });
+
+Route::get('/produk', function () {
+    return view('utama.produk');
+});
+
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+});
+
+Route::get('/data-produk', function () {
+    return view('admin.dataproduk');
+});
+
+Route::get('/data-pegawai', function () {
+    return view('admin.datapegawai');
+});
+
+Route::get('/profile', function () {
+    return view('admin.profile');
+});
+
+Route::get('/laporan', function () {
+    return view('admin.laporan');
+});

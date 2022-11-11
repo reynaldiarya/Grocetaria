@@ -1,0 +1,63 @@
+/*! Admin */
+.bg-navbarg {
+    background-color: #60D05E;
+}
+
+.rounded-nav {
+    border: 2px;
+    border-radius: 25px;
+}
+
+.topbar .dropdown-list .dropdown-header {
+    background-color: #60D05E;
+    border: #60D05E;
+}
+
+.bg-dashboard {
+    background-image: url("/assets/img/dashboard-header.png");
+    padding: 50px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: gray;
+    text-decoration: none;
+    background-color: #fff;
+  }
+
+.bg-dashboard h2 {
+    margin: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar.toggled {
+    overflow: hidden;
+    width: 0rem !important;
+}
+
+.text-grocetaria {
+    color: #60D05E;
+}
+
+.btn-gro {
+    background-color: #60D05E;
+    color:#fff;
+}
+
+/*! Utama */
+.navbar {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-item {
+    font-size: large;
+}
