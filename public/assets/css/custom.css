@@ -47,17 +47,8 @@
 }
 
 /*! Utama */
-.navbar {
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: white;
-    position: absolute;
-    width: 100%;
+.breadcrumb{
+    background-image: url("/assets/img/breadcrumb.png");
+    z-index: -1;
 }
 
-.nav-item {
-    font-size: large;
-}

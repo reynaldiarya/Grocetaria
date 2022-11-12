@@ -44,3 +44,7 @@ Route::get('/profile', function () {
 Route::get('/laporan', function () {
     return view('admin.laporan');
 });
+
+Route::get('/tentang-kami', function () {
+    return view('utama.tentang');
+});
