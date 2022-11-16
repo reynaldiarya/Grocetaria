@@ -18,10 +18,10 @@
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="/assets/img/logo.png" width="161" height="29"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}"><a class="nav-link text-black" href="#">TOKO</a></li>
-                    <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}"><a class="nav-link text-black" href="#">TENTANG KAMI</a></li>
-                    <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}"><a class="nav-link text-black" href="#">KONTAK KAMI</a></li>
-                    <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}"><a class="nav-link text-black" href="#">PELACAKAN</a></li>
+                    <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}"><a class="nav-link text-black" href="/toko">TOKO</a></li>
+                    <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}"><a class="nav-link text-black" href="/tentang-kami">TENTANG KAMI</a></li>
+                    <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}"><a class="nav-link text-black" href="/kontak-kami">KONTAK KAMI</a></li>
+                    <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}"><a class="nav-link text-black" href="/pelacakan">PELACAKAN</a></li>
                 </ul><a class="text-black ms-md-5" role="button" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>

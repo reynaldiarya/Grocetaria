@@ -49,6 +49,16 @@
 /*! Utama */
 .breadcrumb{
     background-image: url("/assets/img/breadcrumb.png");
-    z-index: -1;
+    height: 500px;
+    background-size: cover;
+}
+.breadcrumb .row{
+    padding: 150px 0px 150px 200px;
+}
+
+@media only screen and (max-width: 500px) {
+    .breadcrumb .row{
+        padding: 150px 0px 150px 100px;
+    }
 }
 

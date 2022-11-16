@@ -21,9 +21,18 @@ Route::get('/toko', function () {
     return view('utama.toko');
 });
 
-Route::get('/produk', function () {
-    return view('utama.produk');
+Route::get('/tentang-kami', function () {
+    return view('utama.tentang');
 });
+
+Route::get('/kontak-kami', function () {
+    return view('utama.kontak');
+});
+
+
+
+
+
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
@@ -43,8 +52,4 @@ Route::get('/profile', function () {
 
 Route::get('/laporan', function () {
     return view('admin.laporan');
-});
-
-Route::get('/tentang-kami', function () {
-    return view('utama.tentang');
 });
