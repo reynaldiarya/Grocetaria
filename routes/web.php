@@ -29,6 +29,18 @@ Route::get('/kontak-kami', function () {
     return view('utama.kontak');
 });
 
+Route::get('/pelacakan', function () {
+    return view('utama.pelacakan');
+});
+
+Route::get('/status-pengiriman-cod', function () {
+    return view('utama.statuspengirimancod');
+});
+
+Route::get('/status-pengiriman', function () {
+    return view('utama.statuspengiriman');
+});
+
 
 
 

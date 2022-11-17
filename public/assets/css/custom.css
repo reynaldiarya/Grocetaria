@@ -52,13 +52,21 @@
     height: 500px;
     background-size: cover;
 }
+
 .breadcrumb .row{
     padding: 150px 0px 150px 200px;
+}
+
+.grotitle{
+    margin: 100px 0px 10px 150px;
 }
 
 @media only screen and (max-width: 500px) {
     .breadcrumb .row{
         padding: 150px 0px 150px 100px;
     }
-}
 
+    .grotitle{
+        margin: 150px 0px 10px 125px;
+    }
+}

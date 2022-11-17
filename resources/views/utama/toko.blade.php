@@ -14,7 +14,7 @@
             </div>
         </div>
     </section>
-    <div class="col-lg-8 m-auto">
+    <div class="col-11 col-lg-8 m-auto">
         <div class="input-group my-5">
             <span class="input-group-text bg-white" id="basic-addon1"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
             <input type="text" class="form-control" placeholder="Cari Produk" aria-label="Username" aria-describedby="basic-addon1">
@@ -35,9 +35,8 @@
                     <div class="row mb-4">
                         <div class="col-12">
                             <h6 class="border rounded p-2">Urutkan Harga</h6>
-                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Sayuran</label></div>
-                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Buah-buahan</label></div>
-                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Bumbu Masak</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Min - Max</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Max - Min</label></div>
                         </div>
                     </div>
                 </div>

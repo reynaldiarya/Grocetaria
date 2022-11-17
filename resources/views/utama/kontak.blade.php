@@ -16,7 +16,7 @@
     </section>
     <div class="container" style="margin-top: 100px">
         <div class="row">
-            <div class="col-md-7"><iframe allowfullscreen="" frameborder="0" src="https://cdn.bootstrapstudio.io/placeholders/map.html" width="100%" height="400"></iframe></div>
+            <div class="col-md-7"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.7130616822061!2d112.79959758634205!3d-7.27442771882886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb2dfb565207%3A0x85f00854e63a4596!2sSAYURLELI!5e0!3m2!1sid!2sid!4v1668655412116!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             <div class="col-md-5">
                 <section class="position-relative py-4 py-xl-5">
                     <div class="container position-relative">

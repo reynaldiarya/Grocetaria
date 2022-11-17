@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css" integrity="sha512-aNH2ILn88yXgp/1dcFPt2/EkSNc03f9HBFX0rqX3Kw37+vjipi1pK3L9W08TZLhMg4Slk810sPLdJlNIjwygFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/Hero-Carousel-images.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/MUSA_timeline.css">
 </head>
 
 <body>
     <header>
     <nav class="navbar navbar-light navbar-expand-md fixed-top py-3" style="background-color: rgba(255, 255, 255, 0.8);">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="/assets/img/logo.png" width="161" height="29"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><img src="/assets/img/logo.png" width="161" height="29"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}"><a class="nav-link text-black" href="/toko">TOKO</a></li>

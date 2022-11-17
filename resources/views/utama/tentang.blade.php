@@ -40,7 +40,7 @@
     <div class="container mb-5">
         <h2 class="text-center fw-bold mb-4">Our Crew</h2>
         <div class="row text-center">
-            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="E:\Coding\grocetaria\public\assets\img\logo.png" width="200" height="200">
+            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="/assets/img/denab.jpg" width="200" height="200">
                 <div class="card" style="background-color: #D9D9D9">
                     <div class="card-body">
                         <h4 class="card-title">Dea Nabila Husna</h4>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="E:\Coding\grocetaria\public\assets\img\logo.png" width="200" height="200">
+            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="/assets/img/meimei.jpg" width="200" height="200">
                 <div class="card" style="background-color: #D9D9D9">
                     <div class="card-body">
                         <h4 class="card-title">Meirza Putri Liandhie</h4>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="E:\Coding\grocetaria\public\assets\img\logo.png" width="200" height="200">
+            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="/assets/img/selvi.jpg" width="200" height="200">
                 <div class="card" style="background-color: #D9D9D9">
                     <div class="card-body">
                         <h4 class="card-title">Selviana Ayu Irawan</h4>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="E:\Coding\grocetaria\public\assets\img\logo.png" width="200" height="200">
+            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="/assets/img/luthfi.jpg" width="200" height="200">
                 <div class="card" style="background-color: #D9D9D9">
                     <div class="card-body">
                         <h4 class="card-title">Luthfi Nahar Junestyo</h4>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="E:\Coding\grocetaria\public\assets\img\logo.png" width="200" height="200">
+            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="/assets/img/rey.jpg" width="200" height="200">
                 <div class="card" style="background-color: #D9D9D9">
                     <div class="card-body">
                         <h4 class="card-title">Reynaldi Arya Bavista</h4>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="E:\Coding\grocetaria\public\assets\img\logo.png" width="200" height="200">
+            <div class="col-md-4 py-4 text-center"><img class="rounded-circle border m-auto mb-5" src="/assets/img/ilham.jpg" width="200" height="200">
                 <div class="card" style="background-color: #D9D9D9">
                     <div class="card-body">
                         <h4 class="card-title">Moh. Ilham Fahrezy</h4>
