@@ -41,6 +41,17 @@ Route::get('/status-pengiriman', function () {
     return view('utama.statuspengiriman');
 });
 
+Route::get('/detail-produk', function () {
+    return view('utama.detailproduk');
+});
+
+Route::get('/keranjang-belanja', function () {
+    return view('utama.keranjangbelanja');
+});
+
+Route::get('/review-pesanan', function () {
+    return view('utama.reviewpesanan');
+});
 
 
 
