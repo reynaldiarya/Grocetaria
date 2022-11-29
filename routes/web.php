@@ -53,6 +53,18 @@ Route::get('/review-pesanan', function () {
     return view('utama.reviewpesanan');
 });
 
+Route::get('/konfirmasi-pesanan', function () {
+    return view('utama.konfirmasipesanan');
+});
+
+Route::get('/konfirmasi-pesanan-done', function () {
+    return view('utama.konfirmasipesanandone');
+});
+
+Route::get('/form-pengiriman', function () {
+    return view('utama.formpengiriman');
+});
+
 
 
 
