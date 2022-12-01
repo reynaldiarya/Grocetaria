@@ -193,4 +193,74 @@
         </div>
     </div>
 
+  <!-- Modal Login-->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Masuk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="/login" method="post">
+                @csrf
+                <div class="col-auto">
+                    <input type="text" name="email" class="form-control mb-2" id="email"
+                        placeholder="Email">
+                </div>
+                <div class="col-auto">
+                    <input type="password" name="password" class="form-control mb-2" id="password"
+                        placeholder="Password">
+                </div>
+                <div class="col-auto d-flex mt-4">
+                    <button type="submit" class="btn btn-success" style="width: 100%">Masuk</button>
+                </div>
+                <p class="mt-4" style="font-size: 13px; text-align: center;">Belum punya akun? <a
+                        href="/regis" class="text-success" style="font-size: 13px; font-weight: 600;">Daftar
+                        >></a></p>
+            </form>
+        </div>
+        {{-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info">Save changes</button>
+        </div> --}}
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Daftar-->
+  <div class="modal fade" id="daftarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Daftar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="/regis" method="post">
+                @csrf
+                <div class="col-auto">
+                    <input type="text" name="email" class="form-control mb-2" id="email"
+                        placeholder="Email">
+                </div>
+                <div class="col-auto">
+                    <input type="password" name="password" class="form-control mb-2" id="password"
+                        placeholder="Password">
+                </div>
+                <div class="col-auto">
+                    <input type="password" name="password_confirmation" class="form-control mb-2" id="password2" placeholder="Konfirmasi Password">
+                </div>
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-success" style="width: 100%;">Daftar</button>
+                </div>
+                <p class="mt-4 text-dark" style="font-size: 13px; text-align: center;">Sudah mempunyai akun? <a href="/login" class="text-success" style="font-size: 13px; font-weight: 600;">Masuk >></a></p>
+            </form>
+        </div>
+        {{-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> --}}
+      </div>
+    </div>
+  </div>
 @endsection
