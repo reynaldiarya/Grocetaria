@@ -30,7 +30,7 @@ Route::get('/kontak-kami', [CustomerController::class, 'kontak']);
 Route::post('/regis', [RegisterController::class, 'store']);
 // Customer Login-Logout
 Route::any('/login', [LoginController::class, 'authenticate']);
-// Route::post('/logout', [LoginController::class, 'logout']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
 // Middleware cek role
 Route::group(['middleware' => 'auth'], function() {
