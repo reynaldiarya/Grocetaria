@@ -91,6 +91,14 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('/form-pengiriman', function () {
             return view('utama.formpengiriman');
         });
+
+	  Route::get('/form-pengiriman-konfirmasi', function () {
+    		return view('utama.formpengirimankonfirmasi');
+	  });
+
+	  Route::get('/pengiriman', function () {
+    		return view('utama.pengiriman');
+	  });
     });
 
 });

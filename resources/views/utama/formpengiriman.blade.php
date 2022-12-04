@@ -10,7 +10,7 @@
 </section>
 <section class="breadcrumb">
     <div class="col-lg-8 p-5 mx-auto">
-        <div class="card mb-5">
+        <div class="card mb-5" style="background-color: rgb(255,255,255,0.7)">
             <div class="card-body">
                 <div class="col-lg-11">
                     <p> Isi form dibawah ini untuk pengiriman produk anda</p>
