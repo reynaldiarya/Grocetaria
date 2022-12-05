@@ -1,8 +1,13 @@
 @extends('utama.partials.main')
 @section('content')
 <section class="py-4 py-xl-5">
-    <div class="col-lg-11">
-        <h1 class="grotitle"> Review Pesanan</h1>
+    <div class="col-lg-12">
+        <h1 class="grotitle"> Pilih Metode Pembayaran</h1>
+    </div>
+    <div class="col-lg-12">
+        <a class="grotitle" href="pembayaran" style="color: #000000; text-decoration: none;"> Transfer</a>
+        <a class="grotitle mx-4" href="pembayaran-cod" style="color: #60D05E; text-decoration: none;"> Cash On Delivery</a>
+
     </div>
 </section>
 <div class="container" style="margin-bottom: 150px">
@@ -62,6 +67,11 @@
                       <div class="d-flex justify-content-between" style="font-weight: 500;">
                         <p class="mb-2">Diskon</p>
                         <p class="mb-2">Rp 0</p>
+                      </div>
+
+                      <div class="d-flex justify-content-between" style="font-weight: 500;">
+                        <p class="mb-0">Biaya Pengiriman</p>
+                        <p class="mb-0">Rp 8.000</p>
                       </div>
 
                       <hr class="my-4">

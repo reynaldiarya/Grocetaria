@@ -33,10 +33,10 @@ Route::any('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
 // Middleware cek role
-Route::group(['middleware' => 'auth'], function() {
+// Route::group(['middleware' => 'auth'], function() {
 
     // Halaman yang bisa diakses oleh Admin
-    Route::group(['middleware' => 'cekrole:admin'], function() {
+    // Route::group(['middleware' => 'cekrole:admin'], function() {
         Route::get('/dashboard', function () {
             return view('admin.dashboard');
         });
@@ -56,10 +56,10 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('/laporan', function () {
             return view('admin.laporan');
         });
-    });
+    // });
 
     // Halaman yang bisa diakses oleh Customer
-    Route::group(['middleware' => 'cekrole:customer'], function() {
+    // Route::group(['middleware' => 'cekrole:customer'], function() {
         Route::get('/pelacakan', [CustomerController::class, 'pelacakan']);
 
         Route::get('/status-pengiriman-cod', [CustomerController::class, 'statuscod']);
@@ -92,13 +92,27 @@ Route::group(['middleware' => 'auth'], function() {
             return view('utama.formpengiriman');
         });
 
-	  Route::get('/form-pengiriman-konfirmasi', function () {
-    		return view('utama.formpengirimankonfirmasi');
-	  });
+        Route::get('/form-pengiriman-konfirmasi', function () {
+                return view('utama.formpengirimankonfirmasi');
+        });
 
-	  Route::get('/pengiriman', function () {
-    		return view('utama.pengiriman');
-	  });
-    });
+        Route::get('/pengiriman', function () {
+                return view('utama.pengiriman');
+        });
+    // });
 
+
+
+// });
+
+Route::get('/pembayaran', function () {
+    return view('utama.pembayaran');
+});
+
+Route::get('/upload-bukti-pembayaran', function () {
+    return view('utama.buktipembayaran');
+});
+
+Route::get('/pembayaran-cod', function () {
+    return view('utama.pembayarancod');
 });

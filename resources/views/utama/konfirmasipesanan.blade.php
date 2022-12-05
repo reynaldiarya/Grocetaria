@@ -2,7 +2,7 @@
 @section('content')
 <section class="py-4 py-xl-5">
     <div class="col-lg-11">
-        <h1 class="grotitle"> Keranjang Belanja</h1>
+        <h1 class="grotitle"> Konfirmasi Pesanan</h1>
     </div>
 </section>
 <div class="container" style="margin-bottom: 150px">
@@ -15,7 +15,6 @@
                 <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col"></th>
                       <th scope="col">Produk</th>
                       <th scope="col">Harga</th>
                       <th scope="col">Jumlah</th>
@@ -24,11 +23,6 @@
                   </thead>
                   <tbody>
                     <tr>
-                        <td class="align-middle">
-                            <div class="form-check" style="font-size: 20px">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                              </div>
-                          </td>
                       <td class="align-middle">
                         <div class="d-flex flex-row">
                         <img src="/assets/img/wortel.png" class="rounded-3"
