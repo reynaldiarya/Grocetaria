@@ -20,9 +20,9 @@
                   onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                   <i class="fas fa-plus"></i>
                 </button>
-                <button class="btn mx-5" style="background-color: #4C8228; color: #fff">
+                <a class="btn mx-5" style="background-color: #4C8228; color: #fff" href="keranjang-belanja">
                     Tambahkan ke Keranjang
-                </button>
+                </a>
             </div>
         </div>
     </div>

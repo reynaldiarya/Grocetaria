@@ -91,11 +91,11 @@
                         <p class="mb-2">Rp 30.000</p>
                       </div>
 
-                      <button type="button" class="btn btn-gro btn-block btn-lg">
+                      <a href="review-pesanan" class="btn btn-gro btn-block btn-lg">
                         <div class="d-flex justify-content-between">
                           <span>Lanjutkan</span>
                         </div>
-                      </button>
+                      </a>
 
                     </div>
                   </div>

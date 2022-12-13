@@ -24,7 +24,7 @@
                 <div class="col-lg-12">Alamat Pengiriman</div>
                 <div class="mb-3">Jl. Jojoran No.18 RT/RW 002/007, Surabaya, Jawa Timur</div>
                 <div class="d-flex justify-content-center">
-                    <div class="col-2 mx-2"><button class="btn btn-gro text-center d-block w-100" type="submit">Lanjut </button></div>
+                    <div class="col-2 mx-2"><a class="btn btn-gro text-center d-block w-100" href="pengiriman">Lanjut </a></div>
                 </div>
             </div>
         </div>

@@ -88,9 +88,9 @@
 
                 </div>
               </div>
-              <div class="d-flex justify-content-center"><button class="btn btn-gro btn-lg col-2 border my-5">
+              <div class="d-flex justify-content-center"><a class="btn btn-gro btn-lg col-2 border my-5" href="form-pengiriman">
                 Checkout
-              </button></div>
+              </a></div>
 
             </div>
           </div>

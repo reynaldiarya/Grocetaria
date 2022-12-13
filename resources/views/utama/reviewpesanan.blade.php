@@ -68,12 +68,12 @@
 
                       <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
                         <p class="mb-2">Total</p>
-                        <p class="mb-2">Rp 38.000</p>
+                        <p class="mb-2">Rp 30.000</p>
                       </div>
 
-                      <button type="button" class="btn btn-gro btn-block btn-lg">
+                      <a href="konfirmasi-pesanan" class="btn btn-gro btn-block btn-lg">
                           Berikutnya
-                      </button>
+                      </a>
 
                     </div>
                   </div>

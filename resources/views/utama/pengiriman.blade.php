@@ -68,9 +68,9 @@
             </div>
         </div>
         <div class="d-flex flex-row-reverse">
-            <button type="button" class="btn btn-gro btn-block btn-lg">
+            <a type="keranjang-belanja" class="btn btn-gro btn-block btn-lg">
                 Berikutnya
-            </button>
+            </a>
         </div>
     </div>
 </section>
