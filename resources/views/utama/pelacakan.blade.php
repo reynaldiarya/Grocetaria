@@ -9,7 +9,7 @@
     <div class="col-8 col-lg-4 m-auto">
         <div class="input-group mb-5">
             <input type="text" class="form-control" placeholder="Kode Pengiriman" aria-label="Username" aria-describedby="basic-addon1">
-            <button class="input-group-text bg-white" id="basic-addon1"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            <a href="/status-pengiriman" class="input-group-text bg-white" id="basic-addon1"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
         </div>
     </div>
 </div>
