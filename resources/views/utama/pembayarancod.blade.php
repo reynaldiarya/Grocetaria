@@ -81,9 +81,9 @@
                         <p class="mb-2">Rp 38.000</p>
                       </div>
 
-                      <button type="button" class="btn btn-gro btn-block btn-lg">
-                          Berikutnya
-                      </button>
+                      <div class="col-md-12 d-flex justify-content-center">
+                        <button onclick="javascript:setTimeout(function () {window.location.href='/pelacakan';}, 3000)" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-gro my-3">Lanjut</button>
+                      </div>
 
                     </div>
                   </div>
@@ -92,6 +92,20 @@
               </div>
 
             </div>
+          </div>
+        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img style="height: 150px" src="/assets/img/icon-cod.png">
+                <h2>Bayar Menggunakan Uang Tunai</h2>
+                <p>Anda akan diarahkan ke halaman status pengiriman </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
