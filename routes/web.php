@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
@@ -18,13 +18,13 @@ use App\Http\Controllers\ProdukController;
 |
 */
 
-Route::get('/', [CustomerController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/toko', [CustomerController::class, 'toko']);
+Route::get('/toko', [HomeController::class, 'toko']);
 
-Route::get('/tentang-kami', [CustomerController::class, 'about']);
+Route::get('/tentang-kami', [HomeController::class, 'about']);
 
-Route::get('/kontak-kami', [CustomerController::class, 'kontak']);
+Route::get('/kontak-kami', [HomeController::class, 'kontak']);
 
 // User Regis
 Route::post('/regis', [RegisterController::class, 'store']);
@@ -59,7 +59,7 @@ Route::post('/logout', [LoginController::class, 'logout']);
     // });
 
     // Halaman yang bisa diakses oleh Customer
-    // Route::group(['middleware' => 'cekrole:customer'], function() {
+    Route::group(['middleware' => 'cekrole:konsumen'], function() {
         Route::get('/pelacakan', [CustomerController::class, 'pelacakan']);
 
         Route::get('/status-pengiriman-cod', [CustomerController::class, 'statuscod']);
@@ -92,27 +92,30 @@ Route::post('/logout', [LoginController::class, 'logout']);
             return view('utama.formpengiriman');
         });
 
-        Route::get('/form-pengiriman-konfirmasi', function () {
-                return view('utama.formpengirimankonfirmasi');
+        Route::get('/profil', function () {
+            return view('utama.profil');
         });
+        
+                Route::get('/form-pengiriman-konfirmasi', function () {
+                        return view('utama.formpengirimankonfirmasi');
+                });
 
-        Route::get('/pengiriman', function () {
-                return view('utama.pengiriman');
-        });
-    // });
+                Route::get('/pengiriman', function () {
+                        return view('utama.pengiriman');
+                });
 
 
+                Route::get('/pembayaran', function () {
+                    return view('utama.pembayaran');
+                });
 
-// });
+                Route::get('/upload-bukti-pembayaran', function () {
+                    return view('utama.buktipembayaran');
+                });
 
-Route::get('/pembayaran', function () {
-    return view('utama.pembayaran');
-});
-
-Route::get('/upload-bukti-pembayaran', function () {
-    return view('utama.buktipembayaran');
-});
-
-Route::get('/pembayaran-cod', function () {
-    return view('utama.pembayarancod');
-});
+                Route::get('/pembayaran-cod', function () {
+                    return view('utama.pembayarancod');
+                });
+    });
+// Update Password User
+Route::put('/ubahpw', [LoginController::class, 'updatepw']);
