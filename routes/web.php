@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
@@ -18,13 +18,13 @@ use App\Http\Controllers\ProdukController;
 |
 */
 
-Route::get('/', [CustomerController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/toko', [CustomerController::class, 'toko']);
+Route::get('/toko', [HomeController::class, 'toko']);
 
-Route::get('/tentang-kami', [CustomerController::class, 'about']);
+Route::get('/tentang-kami', [HomeController::class, 'about']);
 
-Route::get('/kontak-kami', [CustomerController::class, 'kontak']);
+Route::get('/kontak-kami', [HomeController::class, 'kontak']);
 
 // User Regis
 Route::post('/regis', [RegisterController::class, 'store']);
@@ -59,7 +59,7 @@ Route::group(['middleware' => 'auth'], function() {
     });
 
     // Halaman yang bisa diakses oleh Customer
-    Route::group(['middleware' => 'cekrole:customer'], function() {
+    Route::group(['middleware' => 'cekrole:konsumen'], function() {
         Route::get('/pelacakan', [CustomerController::class, 'pelacakan']);
 
         Route::get('/status-pengiriman-cod', [CustomerController::class, 'statuscod']);
@@ -91,6 +91,13 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('/form-pengiriman', function () {
             return view('utama.formpengiriman');
         });
+
+        Route::get('/profil', function () {
+            return view('utama.profil');
+        });
     });
 
 });
+
+// Update Password User
+Route::put('/ubahpw', [LoginController::class, 'updatepw']);

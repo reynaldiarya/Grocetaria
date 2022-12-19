@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -51,5 +52,25 @@ class LoginController extends Controller
         request()->session()->regenerateToken();
 
         return redirect()->intended('/');
+    }
+
+    public function updatepw(Request $request)
+    {
+        $user = Auth::user();
+
+        $validated = $request->validate([
+            'password_lama' => ['required'],
+            'password' => ['required'],
+            'password_confirmation' => ['required', 'same:password']
+        ]);
+
+        if (Hash::check($request->password_lama, $user->password)){
+            $user->update(['password' => Hash::make($request->password)]);
+            return back()->with('message', 'Password Anda berhasil diubah');
+        }
+
+        throw ValidationException::withMessages([
+            'password_lama' => 'Password lama Anda tidak valid'
+        ]);
     }
 }

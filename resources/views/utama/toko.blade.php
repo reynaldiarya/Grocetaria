@@ -27,110 +27,51 @@
                     <div class="row mb-4">
                         <div class="col-12">
                             <h6 class="border rounded p-2">Kategori</h6>
-                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" checked><label class="form-check-label" for="formCheck-1">Sayuran</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" checked><label class="form-check-label" for="formCheck-1">Semua</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Sayuran</label></div>
                             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Buah-buahan</label></div>
                             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Bumbu Masak</label></div>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12">
-                            <h6 class="border rounded p-2">Urutkan Harga</h6>
-                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Min - Max</label></div>
-                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Max - Min</label></div>
+                            <h6 class="border rounded p-2" id="filters">Urutkan Harga</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="formCheck-1">
+                                <label class="form-check-label" for="formCheck-1">Semua</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="formCheck-2">
+                                <label class="form-check-label" for="formCheck-2">Min - Max</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="formCheck-3">
+                                <label class="form-check-label" for="formCheck-3">Max - Min</label>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-9">
                 <div class="row">
-                    <div class="col-md-4 my-2">
-                        <div class="card-body">
-                            <div class="card"><img class="card-img-top w-100 d-block" style="height: 200px; width: 200px; padding: 25px" src="/assets/img/sayur-kol.png">
-                                <div class="card-body">
-                                    <h4 class="card-title">Sayur Kol 500g</h4>
-                                    <p class="card-text">Rp 7.000,-</p>
-                                    <p class="card-text">Terjual 250+</p><button class="btn" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    @foreach ($produks as $produk)
+                        <div class="col-md-3 my-2">
+                            <div class="card-body">
+                                <div class="card"><img class="card-img-top w-100 d-block"
+                                        style="height: 200px; width: 200px; padding: 25px" src="{{ asset("storage/$produk->image") }}">
+                                    <div class="card-body">
+                                        <h4 class="card-title">{{ $produk->nama_produk }}</h4>
+                                        <p class="card-text">Rp{{ $produk->hargas->nominal_harga }}</p>
+                                        @if (Auth::user())
+                                            <button class="btn" type="button">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <div class="card-body">
-                            <div class="card"><img class="card-img-top w-100 d-block" style="height: 200px; width: 200px; padding: 25px" src="/assets/img/tomat.png">
-                                <div class="card-body">
-                                    <h4 class="card-title">Tomat 250g</h4>
-                                    <p class="card-text">Rp 8.500,-</p>
-                                    <p class="card-text">Terjual 250+</p><button class="btn" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <div class="card-body">
-                            <div class="card"><img class="card-img-top w-100 d-block" style="height: 200px; width: 200px; padding: 25px" src="/assets/img/wortel.png">
-                                <div class="card-body">
-                                    <h4 class="card-title">Wortel 500g</h4>
-                                    <p class="card-text">Rp 7.500,-</p>
-                                    <p class="card-text">Terjual 250+</p><button class="btn" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <div class="card-body">
-                            <div class="card"><img class="card-img-top w-100 d-block" style="height: 200px; width: 200px; padding: 25px" src="/assets/img/kentang.png">
-                                <div class="card-body">
-                                    <h4 class="card-title">Kentang 1000g</h4>
-                                    <p class="card-text">Rp 9.000,-</p>
-                                    <p class="card-text">Terjual 250+</p><button class="btn" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <div class="card-body">
-                            <div class="card"><img class="card-img-top w-100 d-block" style="height: 200px; width: 200px; padding: 25px" src="/assets/img/sayur-kol.png">
-                                <div class="card-body">
-                                    <h4 class="card-title">Sayur Kol 500g</h4>
-                                    <p class="card-text">Rp 7.000,-</p>
-                                    <p class="card-text">Terjual 250+</p><button class="btn" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <div class="card-body">
-                            <div class="card"><img class="card-img-top w-100 d-block" style="height: 200px; width: 200px; padding: 25px" src="/assets/img/tomat.png">
-                                <div class="card-body">
-                                    <h4 class="card-title">Tomat 250g</h4>
-                                    <p class="card-text">Rp 8.500,-</p>
-                                    <p class="card-text">Terjual 250+</p><button class="btn" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <div class="card-body">
-                            <div class="card"><img class="card-img-top w-100 d-block" style="height: 200px; width: 200px; padding: 25px" src="/assets/img/wortel.png">
-                                <div class="card-body">
-                                    <h4 class="card-title">Wortel 500g</h4>
-                                    <p class="card-text">Rp 7.500,-</p>
-                                    <p class="card-text">Terjual 250+</p><button class="btn" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <div class="card-body">
-                            <div class="card"><img class="card-img-top w-100 d-block" style="height: 200px; width: 200px; padding: 25px" src="/assets/img/kentang.png">
-                                <div class="card-body">
-                                    <h4 class="card-title">Kentang 1000g</h4>
-                                    <p class="card-text">Rp 9.000,-</p>
-                                    <p class="card-text">Terjual 250+</p><button class="btn" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

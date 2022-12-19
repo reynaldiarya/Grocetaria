@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Produk extends Model
+class Pembayaran extends Model
 {
     use HasFactory;
 
@@ -13,12 +13,11 @@ class Produk extends Model
 
     public function pemesanans()
     {
-        return $this->belongsToMany(Pemesanan::class, 'detail_pemesanans')->withPivot('jumlah', 'harga', 'subtotal');
+        return $this->belongsTo(Pemesanan::class);
     }
 
-    public function hargas()
+    public function pegawais()
     {
-        return $this->hasOne(Harga::class);
+        return $this->belongsTo(Pegawai::class);
     }
-
 }

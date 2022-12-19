@@ -54,7 +54,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="/profil">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -72,7 +72,8 @@
                                 <form action="/logout" method="post">
                                     @csrf
                                     <button class="dropdown-item text-danger border-0">
-                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>  Logout
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Logout
                                     </button>
                                 </form>
                             </div>
@@ -128,6 +129,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let exist = '{{Session::has('errors')}}';
+        let msg = '{{Session::get('errors')}}';
+        msg = msg.replace(/&quot;/g, '\"');
+
+        if(exist){
+            let json = JSON.parse(msg);
+            let emailErr = ((typeof (json["email"]) !== 'undefined') ? json["email"] : '');
+            let passErr = ((typeof (json["password_confirmation"]) !== 'undefined') ? json["password_confirmation"] : '');
+            let alertText = emailErr + "\n" + passErr;
+            alert(alertText);
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="assets/vendor/jquery/jquery.min.js"></script>

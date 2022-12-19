@@ -20,7 +20,7 @@ class User extends Authenticatable
     protected $guarded = ['id'];
 
     protected $attributes = [
-        'role' => 'customer'
+        'role' => 'konsumen'
     ];
 
     /**
@@ -42,9 +42,18 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function customers()
+    public function konsumens()
     {
-        return $this->hasMany(Customers::class);
+        return $this->hasMany(Konsumen::class);
     }
 
+    public function pegawais()
+    {
+        return $this->hasMany(Pegawai::class);
+    }
+
+    public function keranjangs()
+    {
+        return $this->hasOne(Keranjang::class);
+    }
 }

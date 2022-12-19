@@ -12,6 +12,7 @@ class RegisterController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
+            'notelp' => ['required'],
             'email' => ['required', 'email:dns', 'unique:users'],
             'password' => ['required', 'max:45'],
             'password_confirmation' => ['required', 'same:password']
