@@ -1,4 +1,7 @@
 @extends('utama.partials.main')
+@section('style')
+<link rel="stylesheet" href="/assets/css/MUSA_timeline.css">
+@endsection
 @section('content')
 <section class="py-4 py-xl-5">
     <div class="col-lg-11">

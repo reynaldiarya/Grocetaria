@@ -14,7 +14,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/Hero-Carousel-images.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
-    <link rel="stylesheet" href="/assets/css/MUSA_timeline.css">
     @yield('style')
 </head>
 
