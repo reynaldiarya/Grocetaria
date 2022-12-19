@@ -95,27 +95,27 @@ Route::post('/logout', [LoginController::class, 'logout']);
         Route::get('/profil', function () {
             return view('utama.profil');
         });
-        
-                Route::get('/form-pengiriman-konfirmasi', function () {
-                        return view('utama.formpengirimankonfirmasi');
-                });
 
-                Route::get('/pengiriman', function () {
-                        return view('utama.pengiriman');
-                });
+        Route::get('/form-pengiriman-konfirmasi', function () {
+            return view('utama.formpengirimankonfirmasi');
+        });
+
+        Route::get('/pengiriman', function () {
+                return view('utama.pengiriman');
+        });
 
 
-                Route::get('/pembayaran', function () {
-                    return view('utama.pembayaran');
-                });
+        Route::get('/pembayaran', function () {
+            return view('utama.pembayaran');
+        });
 
-                Route::get('/upload-bukti-pembayaran', function () {
-                    return view('utama.buktipembayaran');
-                });
+        Route::get('/upload-bukti-pembayaran', function () {
+            return view('utama.buktipembayaran');
+        });
 
-                Route::get('/pembayaran-cod', function () {
-                    return view('utama.pembayarancod');
-                });
+        Route::get('/pembayaran-cod', function () {
+            return view('utama.pembayarancod');
+        });
     });
 // Update Password User
 Route::put('/ubahpw', [LoginController::class, 'updatepw']);
