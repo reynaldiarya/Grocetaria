@@ -1,18 +1,3 @@
-Ran command: `npm run prod`
-Ran command: `npm run dev`
-Ran command: `npm update --save`
-Ran command: `npm run dev`
-Ran command: `npm run dev`
-Listed directory Grocetaria
-Viewed composer.json:1-64
-Viewed package.json:1-19
-Listed directory Models
-Listed directory Controllers
-Viewed api.php:1-20
-Viewed web.php:1-122
-Viewed README.md:1-64
-Viewed .env.example:1-53
-
 # Grocetaria
 
 A sophisticated grocery store management system and seamless online shopping experience.
